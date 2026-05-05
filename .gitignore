@@ -1,0 +1,36 @@
+# Ignore the virtual environment
+weld_ai_env/
+weld_ai_env/bin/
+weld_ai_env/bin/activate
+weld_ai_env/bin/activate.ps1
+weld_ai_env/bin/activate.csh
+weld_ai_env/bin/activate.fish
+weld_ai_env/bin/activate.cmd
+weld_ai_env/bin/activate.bat
+weld_ai_env/bin/python
+weld_ai_env/bin/python3
+weld_ai_env/bin/python3.exe
+weld_ai_env/Scripts/
+weld_ai_env/Scripts/activate.bat
+weld_ai_env/Scripts/activate_this.py
+weld_ai_env/Scripts/easy_install
+weld_ai_env/Scripts/easy_install-3.7
+weld_ai_env/Scripts/easy_install-3.7-script.py
+weld_ai_env/Scripts/easy_install-script.py
+weld_ai_env/Scripts/pip
+weld_ai_env/Scripts/pip 19.0.3
+weld_ai_env/Scripts/pip3
+weld_ai_env/Scripts/pip3.7
+weld_ai_env/Scripts/pip3.7-script.py
+weld_ai_env/Scripts/pip3-script.py
+weld_ai_env/Scripts/pip_install-3.7
+weld_ai_env/Scripts/pip_install-script.py
+            
+venv/
+.env
+
+
+
+# Python caches
+__pycache__/
+*.pyc

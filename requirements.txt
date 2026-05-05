@@ -9,4 +9,5 @@ reportlab
 pydantic
 grad-cam
 matplotlib
-fpdf
+fpdfwatchdog
+python-dotenv

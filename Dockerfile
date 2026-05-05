@@ -13,6 +13,9 @@ RUN apt-get update && apt-get install -y \
 # Copy the current directory contents into the container at /app
 COPY . /app
 
+# Create necessary directories for logs and data
+RUN mkdir -p logs data/raw data/processed data/reports
+
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 

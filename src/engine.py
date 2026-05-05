@@ -1,4 +1,9 @@
 import logging
+import os
+
+# Ensure logs directory exists
+if not os.path.exists('logs'):
+    os.makedirs('logs')
 
 # Set up logging for Phase 4 Audit Trail
 logging.basicConfig(filename='logs/audit_trail.log', level=logging.INFO)

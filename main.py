@@ -3,7 +3,7 @@ from src.processor import WeldProcessor
 from src.engine import WeldEngine
 from src.detector import WeldDetector
 import cv2
-from src.reporter import WeldReporter
+# from src.reporter import WeldReporter
 import datetime
 
 def main():
@@ -80,17 +80,17 @@ def main():
                 # Show annotated image
                 st.image(annotated_img, caption="AI Detection & Measurements", channels="BGR")
 
-                # 3. Generate Report (Phase 4)
-                if st.button("Generate Final Report"):
-                    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-                    report_path = f"data/reports/inspection_report_{timestamp}.pdf"
-                    annotated_img_path = "data/processed/temp_annotated.jpg"
-                    cv2.imwrite(annotated_img_path, annotated_img)
-                    
-                    reporter = WeldReporter()
-                    report_data = {'standard': 'ASME B31.3', 'findings': findings_for_report}
-                    reporter.create_report(report_path, report_data, annotated_img_path)
-                    st.success(f"Report saved to {report_path}")
+                # 3. Generate Report (Phase 4) - Disabled for now
+                # if st.button("Generate Final Report"):
+                #     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+                #     report_path = f"data/reports/inspection_report_{timestamp}.pdf"
+                #     annotated_img_path = "data/processed/temp_annotated.jpg"
+                #     cv2.imwrite(annotated_img_path, annotated_img)
+                #     
+                #     reporter = WeldReporter()
+                #     report_data = {'standard': 'ASME B31.3', 'findings': findings_for_report}
+                #     reporter.create_report(report_path, report_data, annotated_img_path)
+                #     st.success(f"Report saved to {report_path}")
         else:
             st.error(f"Insufficient Sensitivity: Only {wires} IQI wires detected. Stop.")
 

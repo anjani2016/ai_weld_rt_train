@@ -1,0 +1,22 @@
+# --- Core AI and Computer Vision ---
+ultralytics          # YOLOv11 and high-speed detection
+opencv-python-headless  # Image processing (CLAHE, IQI detection)
+torch                # Backend for deep learning models
+huggingface_hub      # To pull pre-trained models
+
+# --- Data Science & Processing ---
+numpy                # Numerical operations for measurement logic
+pandas               # Managing the "Table of Findings"
+
+# --- Reporting & Deployment ---
+streamlit            # Front-end dashboard
+reportlab            # PDF generation for inspection reports
+pydantic             # Validation for ASME acceptance criteria rules
+
+# --- Explainable AI (P.Eng Strategy) ---
+grad-cam             # For generating heat maps (Visual Validation)
+matplotlib           # For plotting detection maps
+
+# reports
+
+fpdf               # For PDF report generation
